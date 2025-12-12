@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'Where performance meets elegance.';
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setDisplayedText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 50);
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
+  const renderTextWithHighlight = (text: string) => {
+    const parts = text.split(/\b(performance|elegance)\b/);
+    return parts.map((part, index) => {
+      if (part === 'performance' || part === 'elegance') {
+        return <span key={index} className="font-bold" style={{color: '#0ABAB5'}}>{part}</span>;
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
+
   return (
     <section id="hero" className="relative h-screen w-full snap-section flex flex-col items-center justify-center overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
-        
+
         <div className="animate-fade-in-up">
           <div className="mb-6 flex justify-center">
              <div className="h-20 w-20 bg-black rounded-[1.5rem] flex items-center justify-center shadow-2xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
@@ -17,8 +44,9 @@ const Hero: React.FC = () => {
           <h1 className="text-6xl md:text-9xl font-extrabold tracking-tight text-black mb-6 leading-none">
             Yomahub
           </h1>
-          <p className="max-w-2xl mx-auto text-2xl md:text-3xl text-gray-500 font-medium tracking-wide mb-10 leading-relaxed">
-            Where <span className="text-black font-semibold">performance</span> meets elegance.
+          <p className="max-w-2xl mx-auto text-2xl md:text-3xl text-gray-500 font-medium tracking-wide mb-10 leading-relaxed min-h-[3rem]">
+            {renderTextWithHighlight(displayedText)}
+            {displayedText.length < fullText.length && <span className="animate-pulse">|</span>}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
