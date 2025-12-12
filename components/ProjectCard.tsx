@@ -40,10 +40,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       </div>
 
       <div className="flex-1 relative z-10">
-        <h3 className={`text-3xl font-extrabold tracking-tight mb-3 transition-colors ${project.theme.titleColor || 'text-gray-900'} group-hover:brightness-110`} style={{fontWeight: 700}}>
+        <h3 className="text-3xl font-bold tracking-tight mb-3 text-black">
           {project.name}
         </h3>
-        <p className={`text-base font-bold leading-relaxed mb-4 line-clamp-2 ${project.theme.accentColor}`} style={{fontWeight: 600}}>
+        <p className="text-base font-bold leading-relaxed mb-4 line-clamp-2 text-black">
           {project.description}
         </p>
         <p className="text-sm text-gray-500 line-clamp-3 leading-relaxed font-medium" style={{fontWeight: 500}}>
