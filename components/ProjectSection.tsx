@@ -70,13 +70,13 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
            </p>
 
            <div className="flex items-center gap-6">
-              <a 
-                href={project.link} 
-                target="_blank" 
+              <a
+                href={project.website || project.link}
+                target="_blank"
                 rel="noreferrer"
                 className={`inline-flex items-center px-8 py-3 rounded-full text-base font-semibold transition-all hover:scale-105 shadow-lg ${project.theme.textColor === 'text-white' ? 'bg-white text-black hover:bg-gray-100' : 'bg-black text-white hover:bg-gray-800'}`}
               >
-                View on Gitee
+                {project.website ? 'Visit Website' : 'View on Gitee'}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
               {project.stats && (

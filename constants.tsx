@@ -12,6 +12,7 @@ export const PROJECTS: Project[] = [
     longDescription: 'LiteFlow 拥有极小的侵入性，能够将复杂的业务逻辑解耦为细粒度的组件。通过脚本或配置文件进行编排，支持热刷新，让系统逻辑清晰可见。',
     tags: ['Rule Engine', 'Java', 'High Performance'],
     link: 'https://gitee.com/dromara/liteFlow',
+    website: 'https://liteflow.cc/',
     logo: '/logo/liteflow.svg',
     theme: {
       bgGradient: 'bg-gradient-to-br from-red-50 to-pink-50',
@@ -28,6 +29,7 @@ export const PROJECTS: Project[] = [
     longDescription: 'TLog 提供了一种最简单的方式来解决分布式系统中的日志追踪问题。支持多种RPC框架，业务代码零侵入，十分钟接入，让排查问题变得轻而易举。',
     tags: ['Logging', 'Tracing', 'Distributed'],
     link: 'https://gitee.com/dromara/TLog',
+    website: 'https://tlog.yomahub.com/',
     logo: '/logo/tlog.svg',
     theme: {
       bgGradient: 'bg-gradient-to-br from-blue-50 to-cyan-50',
@@ -44,6 +46,7 @@ export const PROJECTS: Project[] = [
     longDescription: 'Akali 致力于解决应用内部的热点流量问题。相比于宏观限流，Akali 更专注于细粒度的热点数据保护，在极端流量下守护系统稳定性。',
     tags: ['Flow Control', 'Protection', 'Hotspot'],
     link: 'https://gitee.com/dromara/Akali',
+    website: 'https://akali.yomahub.com/',
     logo: '/logo/akali.svg',
     theme: {
       bgGradient: 'bg-gradient-to-br from-purple-50 to-pink-50',
@@ -60,6 +63,7 @@ export const PROJECTS: Project[] = [
     longDescription: '专为高并发场景设计的扁平化 Map 结构。通过极致的内存布局优化，提供比 JDK 标准 HashMap 更卓越的读写性能，是追求极致性能的不二之选。',
     tags: ['Data Structure', 'Optimization', 'Performance'],
     link: 'https://gitee.com/bryan31/RogueMap',
+    website: 'https://roguemap.yomahub.com/',
     logo: '/logo/roguemap.svg',
     theme: {
       bgGradient: 'bg-gradient-to-br from-blue-50 to-orange-50',

@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
   return (
     <a
-      href={project.link}
+      href={project.website || project.link}
       target="_blank"
       rel="noreferrer"
       className="group relative flex flex-col overflow-hidden rounded-[2rem] bg-white p-8 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] border border-gray-100"

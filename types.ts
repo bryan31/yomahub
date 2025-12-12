@@ -7,6 +7,7 @@ export interface Project {
   longDescription: string;
   tags: string[];
   link: string;
+  website?: string;
   icon?: LucideIcon;
   logo?: string;
   theme: {
