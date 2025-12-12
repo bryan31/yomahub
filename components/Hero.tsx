@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           <div className="mb-6 flex justify-center">
              <div className="h-20 w-20 bg-black rounded-[1.5rem] flex items-center justify-center shadow-2xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12">
-                 <path d="M12 22V12M12 12L3 3M12 12L21 3" stroke="#FFD700" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                 <path d="M12 22V12M12 12L3 3M12 12L21 3" stroke="#0ABAB5" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round"/>
                </svg>
              </div>
           </div>

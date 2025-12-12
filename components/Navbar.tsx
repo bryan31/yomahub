@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
             <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
                {/* Abstract Y Logo */}
                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
-                 <path d="M12 22V12M12 12L4 4M12 12L20 4" stroke="#FFD700" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                 <path d="M12 22V12M12 12L4 4M12 12L20 4" stroke="#0ABAB5" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
                </svg>
             </div>
             <span className="font-bold text-xl tracking-tight text-gray-900">
