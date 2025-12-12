@@ -10,12 +10,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => document.getElementById('root')?.scrollTo({top: 0, behavior: 'smooth'})}>
-            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center relative overflow-hidden">
-               {/* Abstract Y Logo */}
-               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
-                 <path d="M12 22V12M12 12L4 4M12 12L20 4" stroke="#0ABAB5" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-               </svg>
-            </div>
+            <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
             <span className="font-bold text-xl tracking-tight text-gray-900">
               优迈空间
             </span>

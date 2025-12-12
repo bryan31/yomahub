@@ -59,8 +59,8 @@ export const PROJECTS: Project[] = [
   {
     id: 'roguemap',
     name: 'RogueMap',
-    description: '高并发下的Map结构优化',
-    longDescription: '专为高并发场景设计的扁平化 Map 结构。通过极致的内存布局优化，提供比 JDK 标准 HashMap 更卓越的读写性能，是追求极致性能的不二之选。',
+    description: '高性能键值存储引擎',
+    longDescription: 'RogueMap 是一个高性能的嵌入式键值存储引擎，突破 HashMap 的内存墙，提供堆外内存和持久化存储能力。',
     tags: ['Data Structure', 'Optimization', 'Performance'],
     link: 'https://gitee.com/bryan31/RogueMap',
     website: 'https://roguemap.yomahub.com/',
